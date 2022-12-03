@@ -1,0 +1,1 @@
+export const DOTA_2_HERO_BASE_URL = 'https://api.opendota.com/api/heroes';
