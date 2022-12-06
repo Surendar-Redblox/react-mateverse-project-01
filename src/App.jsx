@@ -1,17 +1,15 @@
-import 'aframe'
+import 'aframe';
 import 'aframe-particle-system-component';
-import {Scene} from 'aframe-react';
+import { Scene } from 'aframe-react';
 // css modules imports 
-import './App.css'
+import './App.css';
 // assets modules imports 
 import skyImage from './assets/images/stars.jpg';
-
 // other components imports
-import {Mountain, Rocket} from './components'
+import { Mountain, Rocket } from './components';
 
 
 function App() {
-
   return(
     <Scene cursor="rayOrigin: mouse"  update-html>
     <a-camera>
@@ -20,7 +18,6 @@ function App() {
     <a-assets>
       <img id="skyStars" src={skyImage} alt="sky stars" />
     </a-assets>
-
     <a-sky
       color = "#ffffff"
       material = "src: #skyStars"
@@ -32,5 +29,4 @@ function App() {
     </Scene>
   )
 }
-
 export default App
